@@ -1,0 +1,199 @@
+body {
+    font-family: "Flamenco", serif;
+}
+
+/*HEADER*/
+
+header {
+    width: 100%;
+    height: 20%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+#img-header {
+    height: 10vh;
+}
+
+#titulo-header {
+    font-size: 2.5rem;
+    color: #996060;
+}
+
+#container-flex {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: flex-start;
+}
+
+/*DIV IZQUIERDA*/
+
+#contenedor-tabla {
+    width: 70%;
+}
+
+#tabla {
+    width: 100%;
+}
+
+th {
+    font-size: 1.5rem;
+    color: #996060;
+    font-weight: 800;
+}
+
+td {
+    color: #bb7953;
+    font-weight: 700;
+    font-size: 1.2rem;
+}
+
+th,
+td {
+    text-align: center;
+    padding: 1vh;
+    border-bottom: 1px solid #ddd;
+}
+
+tr:hover {
+    background-color: #ffeded;
+}
+
+#boton-eliminar {
+    background-image: url(/img/borrar.png);
+    background-repeat: no-repeat;
+    height: 1.5rem;
+    width: 1.5rem;
+    background-position: center;
+    background-color: white;
+    border: none;
+}
+
+#boton-eliminar:hover {
+    cursor: pointer;
+}
+
+/*DIV DERECHA*/
+
+#img-input {
+    margin-top: -5rem;
+    height: 35vh;
+}
+
+#cantidadTotal,
+#precioTotal {
+    font-size: 1.5rem;
+    color: #996060;
+}
+
+#contenedor-input {
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#container-total {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: left;
+}
+
+#codigo {
+    width: 20vw;
+    height: 5vh;
+    border-radius: 0.5rem;
+    border-width: 2px;
+
+    font-family: "Emilys Candy", serif;
+    font-weight: 400;
+    font-style: normal;
+
+    border-color: #fea9b7;
+    color: #996060;
+    font-weight: bolder;
+}
+
+#boton-enter {
+    font-family: "Emilys Candy", serif;
+    height: 5vh;
+    border-radius: 0.5rem;
+    background-color: #ffeded;
+    border-color: #fea9b7;
+    color: #996060;
+    font-weight: 500;
+
+}
+
+#boton-pagar {
+    font-family: "Emilys Candy", serif;
+    width: 12vw;
+    height: 20vh;
+    border-radius: 1rem;
+    border-width: 2px;
+    font-size: 1.2rem;
+    background-color: #ffeded;
+    border-color: #fea9b7;
+    color: #996060;
+    font-weight: 500;
+}
+
+#boton-pagar:hover,
+#boton-enter:hover {
+    cursor: pointer;
+    background-color: #ffd4db;
+    color: #673f3f;
+}
+
+/*RESPONSIVE DESIGN*/
+
+@media screen and (max-width: 800px) {
+    #container-flex {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-items: flex-start;
+    }
+
+    #contenedor-tabla {
+        width: 100%;
+    }
+
+    #contenedor-input {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    #codigo {
+        width: 50vw;
+        height: 5vh;
+        border-radius: 0.5rem;
+        border-width: 2px;
+    }
+
+    #boton-enter {
+        height: 5vh;
+        border-radius: 0.5rem;
+    }
+
+    #boton-pagar {
+        width: 50vw;
+        height: 20vh;
+        border-radius: 1rem;
+        border-width: 2px;
+    }
+
+    #img-input {
+        margin-top: 0;
+        height: 30vh;
+    }
+}

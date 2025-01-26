@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mis Suspiros</title>
+    <link rel="stylesheet" href="/css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Emilys+Candy&family=Flamenco:wght@300;400&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+
+    <!--Header (logo y nombre de la empresa)-->
+    <header>
+        <img id="img-header" src="img/logoMisSuspiros_200px.png" alt="">
+        <h1 id="titulo-header">Mis Suspiros</h1>
+    </header>
+
+    <div id="container-flex">
+        <div id="contenedor-tabla">
+
+            <!--Tabla de productos-->
+            <table id="tabla">
+                <thead>
+                    <tr>
+                        <th>Cantidad</th>
+                        <th>Nombre</th>
+                        <th>Precio</th>
+                        <th>Eliminar</th>
+                    </tr>
+                </thead>
+
+                <tbody id="cuerpo-tabla"></tbody>
+            </table>
+        </div>
+
+        <!--Div donde se visualiza el total a pagar, cantidad total, input de productos y boton de pagar -->
+        <div id="contenedor-input">
+            <img id="img-input" src="img/logoMisSuspiros_200px.png" alt="MisSuspiros">
+
+            <div id="container-total">
+                <h1 id="cantidadTotal"></h1>
+                <h1 id="precioTotal"></h1>
+            </div>
+
+            <div>
+                <input type="number" name="codigo" id="codigo" placeholder="Ingresa código de producto">
+                <button id="boton-enter" onclick="productoEscaneado()">Enter</button>
+            </div>
+
+            <br>
+            <button id="boton-pagar" onclick="pagar()">Pagar</button>
+        </div>
+    </div>
+
+    <!--JS file-->
+    <script src="./js/functions.js"></script>
+
+</body>
+
+</html>
