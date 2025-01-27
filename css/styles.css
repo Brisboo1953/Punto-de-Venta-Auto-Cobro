@@ -64,7 +64,7 @@ tr:hover {
 }
 
 #boton-eliminar {
-    background-image: url(./Punto-de-Venta-Auto-Cobro/img/borrar.png);
+    background-image: url(/img/borrar.png);
     background-repeat: no-repeat;
     height: 1.5rem;
     width: 1.5rem;
