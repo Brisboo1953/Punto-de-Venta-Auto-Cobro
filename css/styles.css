@@ -64,7 +64,6 @@ tr:hover {
 }
 
 #boton-eliminar {
-    background-image: url(/img/borrar.png);
     background-repeat: no-repeat;
     height: 1.5rem;
     width: 1.5rem;
