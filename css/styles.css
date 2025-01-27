@@ -64,7 +64,7 @@ tr:hover {
 }
 
 #boton-eliminar {
-    background-repeat: no-repeat;
+    background-repeat: repeat;
     height: 1.5rem;
     width: 1.5rem;
     background-position: center;
